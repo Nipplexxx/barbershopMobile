@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/textServiceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Название услуги"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnDeleteService"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDayTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Пн, 14:00"
+        android:textColor="#555555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textServiceName"
+        app:layout_constraintEnd_toStartOf="@id/btnDeleteService" />
+
+    <TextView
+        android:id="@+id/textBarberName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Барбер: Иван Иванов"
+        android:textColor="#777777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDayTime"
+        app:layout_constraintEnd_toStartOf="@id/btnDeleteService" />
+
+    <!-- Новый TextView для стоимости услуги -->
+    <TextView
+        android:id="@+id/textServicePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена: 1000₽"
+        android:textColor="#222222"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textBarberName"
+        android:layout_marginTop="4dp" />
+
+    <!-- Новый TextView для процента баллов -->
+    <TextView
+        android:id="@+id/textPointsPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Баллы: 5%"
+        android:textColor="#222222"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/textServicePrice"
+        app:layout_constraintTop_toBottomOf="@id/textBarberName"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteService"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Удалить услугу"
+        android:src="@android:drawable/ic_menu_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

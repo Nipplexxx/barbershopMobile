@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BarbershopMob</string>
+
+    <!-- Навигация -->
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+
+    <!-- Заголовок навигационного меню -->
+    <string name="nav_header_title">Добро пожаловать!</string>
+    <string name="nav_header_subtitle">Запишитесь легко</string>
+    <string name="nav_header_desc">Навигационная панель</string>
+
+    <!-- Меню навигации -->
+    <string name="menu_booking">Запись</string>
+    <string name="menu_barbers">Барберы</string>
+    <string name="menu_services">Услуги</string>
+    <string name="action_settings">Настройки</string>
+    <string name="menu_profile">Профиль</string>
+
+    <!-- Аутентификация -->
+    <string name="login">Вход</string>
+    <string name="register">Регистрация</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="name">Имя</string>
+    <string name="phone">Телефон</string>
+    <string name="confirm_password">Повторите пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="btn_exit">Выйти</string>
+
+    <!-- Ошибки и подсказки -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Войти или зарегистрироваться</string>
+    <string name="action_sign_in_short">Войти</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="invalid_username">Неверное имя пользователя</string>
+    <string name="invalid_password">Пароль должен быть длиннее 5 символов</string>
+    <string name="login_failed">Ошибка входа</string>
+
+    <!-- Профиль -->
+    <string name="string_Barber_full_name">ФИО Барбера</string>
+    <string name="string_phone_format">+7 (999) 999-99-99</string>
+
+    <!-- Прочее -->
+    <string name="fab_action_placeholder">Функция будет доступна позже</string>
+
+    <!-- Booking fragment -->
+    <string name="button_book_text">Записаться</string>
+
+    <!-- Profile fragment -->
+    <string name="avatar_description">Аватар</string>
+    <string name="points_text">Баллы: %1$d</string>
+    <string name="hint_full_name">ФИО</string>
+    <string name="hint_phone">Телефон</string>
+    <string name="btn_save_profile">Сохранить</string>
+    <string name="schedule_header">Добавить часы работы и услуги</string>
+    <string name="hint_services">Услуги через запятую (напр. Стрижка, Бритьё)</string>
+    <string name="hint_service_price">Стоимость услуги (руб.)</string>
+    <string name="btn_add_schedule">Добавить</string>
+
+    <!-- Days of week short -->
+    <string name="day_mon_short">Пн</string>
+    <string name="day_tue_short">Вт</string>
+    <string name="day_wed_short">Ср</string>
+    <string name="day_thu_short">Чт</string>
+    <string name="day_fri_short">Пт</string>
+    <string name="day_sat_short">Сб</string>
+    <string name="day_sun_short">Вс</string>
+
+    <string name="fab_description">Добавить</string>
+    <string name="string_phone">Телефон</string>
+</resources>

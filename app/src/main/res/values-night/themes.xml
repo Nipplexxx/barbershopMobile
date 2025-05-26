@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Тёмная тема приложения -->
+    <style name="Theme.BarbershopMob" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Основной цвет -->
+        <item name="colorPrimary">@color/primary_light</item>       <!-- светлый синий -->
+        <item name="colorPrimaryVariant">@color/primary_variant</item> <!-- темный синий -->
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Вторичный цвет -->
+        <item name="colorSecondary">@color/secondary</item>          <!-- бирюзовый -->
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Цвет строки состояния -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

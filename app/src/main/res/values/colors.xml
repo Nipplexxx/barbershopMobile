@@ -1,0 +1,26 @@
+<resources>
+    <!-- Основные цвета -->
+    <color name="primary">#1565C0</color>           <!-- насыщенный синий -->
+    <color name="primary_variant">#0D3C61</color>   <!-- темно-синий -->
+    <color name="primary_light">#90CAF9</color>     <!-- светло-голубой -->
+
+    <color name="secondary">#4DB6AC</color>         <!-- приятный бирюзовый -->
+    <color name="secondary_variant">#00796B</color> <!-- глубокий зелёно-бирюзовый -->
+
+    <!-- Акцент -->
+    <color name="accent">#FF7043</color>            <!-- терракотовый -->
+    <color name="accent_dark">#D84315</color>       <!-- темно-терракотовый -->
+
+    <!-- Текст и фон -->
+    <color name="background_light">#FAFAFA</color>  <!-- очень светлый сероватый -->
+    <color name="background_dark">#121212</color>   <!-- темный фон для ночной темы -->
+
+    <color name="text_primary_light">#212121</color> <!-- почти черный (светлая тема) -->
+    <color name="text_secondary_light">#616161</color> <!-- темно-серый -->
+
+    <color name="text_primary_dark">#E0E0E0</color>  <!-- светло-серый (тёмная тема) -->
+    <color name="text_secondary_dark">#9E9E9E</color> <!-- серый -->
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
