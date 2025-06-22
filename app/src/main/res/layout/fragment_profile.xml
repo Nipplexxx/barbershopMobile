@@ -1,13 +1,15 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:paddingTop="16dp">
 
+        <!-- Аватарка -->
         <ImageView
             android:id="@+id/avatarImage"
             android:layout_width="120dp"
@@ -15,41 +17,57 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/ic_avatar_placeholder"
             android:scaleType="centerCrop"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/round_background"
             android:contentDescription="Аватар"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
 
+        <!-- Баллы -->
         <TextView
             android:id="@+id/textPoints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Баллы: 0"
             android:textSize="16sp"
+            android:textColor="@color/text_primary_light"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp" />
 
+        <!-- ФИО -->
         <EditText
             android:id="@+id/editTextFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="ФИО"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:background="@drawable/edit_text_bg" />
 
+        <!-- Телефон -->
         <EditText
             android:id="@+id/editTextPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Телефон"
             android:inputType="phone"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@drawable/edit_text_bg" />
 
+        <!-- Кнопка сохранить -->
         <Button
             android:id="@+id/btnSaveProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Сохранить"
-            android:layout_marginTop="24dp" />
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp"
+            android:padding="14dp"
+            android:elevation="6dp" />
 
+        <!-- Секция для добавления расписания -->
         <LinearLayout
             android:id="@+id/scheduleLayout"
             android:orientation="vertical"
@@ -63,53 +81,64 @@
                 android:layout_height="wrap_content"
                 android:text="Добавить часы работы и услуги"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/text_primary_light" />
 
-            <!-- Spinner для выбора дня недели -->
+            <!-- Спиннер для дня недели -->
             <Spinner
                 android:id="@+id/dayOfWeekSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <!-- Spinner для выбора времени -->
+            <!-- Спиннер для времени -->
             <Spinner
                 android:id="@+id/timeSlotSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp" />
 
-            <!-- Поле для ввода услуг через запятую -->
+            <!-- Услуги -->
             <EditText
                 android:id="@+id/editServices"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Услуги через запятую (напр. Стрижка, Бритьё)"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:padding="14dp"
+                android:background="@drawable/edit_text_bg" />
 
-            <!-- Новое поле для стоимости услуги -->
+            <!-- Стоимость -->
             <EditText
                 android:id="@+id/editServicePrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Стоимость услуги (руб.)"
                 android:inputType="numberDecimal"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:padding="14dp"
+                android:background="@drawable/edit_text_bg" />
 
-            <!-- Спиннер для выбора процента баллов -->
+            <!-- Спиннер для процента баллов -->
             <Spinner
                 android:id="@+id/pointsPercentSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp" />
 
+            <!-- Кнопка добавить -->
             <Button
                 android:id="@+id/btnAddSchedule"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Добавить"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/primary"
+                android:padding="12dp" />
         </LinearLayout>
 
+        <!-- Секция для дней недели -->
         <LinearLayout
             android:id="@+id/daysContainer"
             android:layout_width="match_parent"

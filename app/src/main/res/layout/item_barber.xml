@@ -6,31 +6,33 @@
     android:layout_margin="8dp"
     android:elevation="4dp"
     android:padding="16dp"
-    app:cardCornerRadius="8dp">
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/white">
 
     <LinearLayout
-        android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Имя барбера -->
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="@string/string_Barber_full_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary_light"
+        android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/textViewFullName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_Barber_full_name"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/textViewPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/string_phone"
-            android:textSize="16sp"
-            android:textColor="#555555"
-            android:layout_marginTop="4dp" />
-
+    <!-- Телефон барбера -->
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_phone"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary_light"
+    android:layout_marginTop="4dp" />
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

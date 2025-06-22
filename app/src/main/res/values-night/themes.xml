@@ -2,16 +2,32 @@
     <!-- Тёмная тема приложения -->
     <style name="Theme.BarbershopMob" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Основной цвет -->
-        <item name="colorPrimary">@color/primary_light</item>       <!-- светлый синий -->
-        <item name="colorPrimaryVariant">@color/primary_variant</item> <!-- темный синий -->
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/primary_dark</item>       <!-- темный синий для основной темы -->
+        <item name="colorPrimaryVariant">@color/primary_variant_dark</item> <!-- более темный синий -->
+        <item name="colorOnPrimary">@color/white</item>            <!-- белый текст на основном фоне -->
 
         <!-- Вторичный цвет -->
-        <item name="colorSecondary">@color/secondary</item>          <!-- бирюзовый -->
-        <item name="colorSecondaryVariant">@color/secondary_variant</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/secondary_dark</item>          <!-- темный бирюзовый -->
+        <item name="colorSecondaryVariant">@color/secondary_variant_dark</item>
+        <item name="colorOnSecondary">@color/white</item>            <!-- белый текст на втором фоне -->
 
         <!-- Цвет строки состояния -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/primary_variant_dark</item> <!-- темный синий для строки состояния -->
+
+        <!-- Дополнительные элементы для тёмной темы -->
+        <item name="android:windowBackground">@color/background_dark</item> <!-- более темный фон приложения -->
+        <item name="android:textColorPrimary">@color/white</item>  <!-- белый цвет текста по умолчанию -->
+        <item name="android:textColorSecondary">@color/grey_700</item> <!-- светлый серый для вторичного текста -->
+        <item name="android:navigationBarColor">@color/primary_variant_dark</item> <!-- темный цвет панели навигации -->
     </style>
+
+    <!-- Стиль без ActionBar -->
+    <style name="Theme.BarbershopMob.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Стиль для ActionBar -->
+    <style name="Theme.BarbershopMob.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.BarbershopMob.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

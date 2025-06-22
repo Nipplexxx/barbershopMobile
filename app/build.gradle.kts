@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.annotation)
+    implementation("androidx.cardview:cardview:1.0.0")
 
     // 🔹 Firebase BOM (единая версия для всех модулей Firebase)
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))

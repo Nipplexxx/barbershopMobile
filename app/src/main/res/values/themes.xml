@@ -12,14 +12,21 @@
         <item name="colorOnSecondary">@color/black</item>
 
         <!-- Цвет строки состояния -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item> <!-- темный синий для строки состояния -->
+
+        <!-- Дополнительные элементы для светлой темы -->
+        <item name="android:windowBackground">@color/background_light</item> <!-- светлый фон -->
+        <item name="android:textColorPrimary">@color/text_primary_light</item>  <!-- текст основной темы -->
+        <item name="android:textColorSecondary">@color/text_secondary_light</item> <!-- текст вторичной темы -->
     </style>
 
+    <!-- Стиль без ActionBar -->
     <style name="Theme.BarbershopMob.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
+    <!-- Стиль для ActionBar -->
     <style name="Theme.BarbershopMob.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.BarbershopMob.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

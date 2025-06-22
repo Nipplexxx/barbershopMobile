@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@android:color/white"/> <!-- Белый фон -->
+        <corners android:radius="60dp"/> <!-- Округленные углы с радиусом 60dp для кругового эффекта -->
+        <stroke android:color="#E0E0E0" android:width="1dp"/> <!-- Светлая обводка -->
+    </shape>
+</selector>

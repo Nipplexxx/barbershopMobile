@@ -1,26 +1,37 @@
 <resources>
     <!-- Основные цвета -->
-    <color name="primary">#1565C0</color>           <!-- насыщенный синий -->
-    <color name="primary_variant">#0D3C61</color>   <!-- темно-синий -->
-    <color name="primary_light">#90CAF9</color>     <!-- светло-голубой -->
+    <color name="primary">#1565C0</color>           <!-- насыщенный синий для светлой темы -->
+    <color name="primary_variant">#0D3C61</color>   <!-- темно-синий для светлой темы -->
+    <color name="primary_light">#90CAF9</color>     <!-- светло-голубой для светлой темы -->
 
-    <color name="secondary">#4DB6AC</color>         <!-- приятный бирюзовый -->
-    <color name="secondary_variant">#00796B</color> <!-- глубокий зелёно-бирюзовый -->
+    <!-- Тёмная тема -->
+    <color name="primary_dark">#0A3D71</color>      <!-- темный синий для тёмной темы -->
+    <color name="primary_variant_dark">#0D3C61</color> <!-- более темный синий для тёмной темы -->
 
-    <!-- Акцент -->
+    <!-- Вторичные цвета -->
+    <color name="secondary">#009688</color>         <!-- яркий бирюзовый для светлой темы -->
+    <color name="secondary_variant">#00796B</color> <!-- темный зелёно-бирюзовый для светлой темы -->
+
+    <color name="secondary_dark">#00796B</color>    <!-- темный бирюзовый для тёмной темы -->
+    <color name="secondary_variant_dark">#004D40</color> <!-- более мягкий бирюзовый для тёмной темы -->
+
+    <!-- Акценты -->
     <color name="accent">#FF7043</color>            <!-- терракотовый -->
     <color name="accent_dark">#D84315</color>       <!-- темно-терракотовый -->
 
     <!-- Текст и фон -->
-    <color name="background_light">#FAFAFA</color>  <!-- очень светлый сероватый -->
-    <color name="background_dark">#121212</color>   <!-- темный фон для ночной темы -->
+    <color name="background_light">#FAFAFA</color>  <!-- светлый сероватый для светлой темы -->
+    <color name="background_dark">#1C1C1C</color>   <!-- темный фон для тёмной темы, более мягкий -->
 
-    <color name="text_primary_light">#212121</color> <!-- почти черный (светлая тема) -->
-    <color name="text_secondary_light">#616161</color> <!-- темно-серый -->
+    <!-- Тексты -->
+    <color name="text_primary_light">#212121</color> <!-- почти черный для светлой темы -->
+    <color name="text_secondary_light">#616161</color> <!-- темно-серый для светлой темы -->
 
-    <color name="text_primary_dark">#E0E0E0</color>  <!-- светло-серый (тёмная тема) -->
-    <color name="text_secondary_dark">#9E9E9E</color> <!-- серый -->
+    <color name="text_primary_dark">#E0E0E0</color>  <!-- светло-серый для тёмной темы -->
+    <color name="text_secondary_dark">#B0B0B0</color> <!-- более светлый серый для тёмной темы -->
 
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <!-- Серый цвет для вторичного текста -->
+    <color name="grey_700">#616161</color>          <!-- серый для вторичного текста в светлой теме -->
+    <color name="black">#000000</color>  <!-- чёрный цвет -->
+    <color name="white">#FFFFFF</color>  <!-- белый цвет -->
 </resources>
